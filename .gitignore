@@ -1,0 +1,6 @@
+.ideal
+
+node_modules
+/
+*.log
+

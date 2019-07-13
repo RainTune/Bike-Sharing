@@ -1,0 +1,27 @@
+@import "../var";
+
+.order-detail{
+  #myMap{
+    height: 400px;
+    margin: 10px 0;
+  }
+  .card-wrap{
+    .detail-title {
+      text-align: center;
+      font-size: 24px;
+    }
+    .detail-content{
+      .detail-item{
+        span{
+          margin: 10px 15px;
+          &:first-child{
+            color: @orderDetailTitleColor;
+          }
+          &:last-child{
+            color: @orderDetailContentColor;
+          }
+        }
+      }
+    }
+  }
+}

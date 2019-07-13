@@ -1,0 +1,54 @@
+@import "var";
+body{
+  background: @bodybg;
+}
+.nav-header{
+  background: @otherPart;
+  .head-top{
+    padding: 0 20px;
+    height: 50px;
+    border-bottom: 1px solid @navHeaderBorderColor;
+    text-align: right;
+    line-height: 50px;
+    span{
+      margin: 0 10px;
+    }
+  }
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    line-height: 30px;
+    >span{
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        border-top: 8px solid @otherPart;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .weather{
+      margin-left: 10px;
+    }
+
+  }
+}
+.nav-header-second{
+  background: @heardBg;
+  .second-menu{
+    height: 50px;
+    float: left;
+    font-size: 18px;
+    img{
+      height: 48px;
+      display: block;
+      float: left;
+    }
+  }
+}
